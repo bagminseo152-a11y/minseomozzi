@@ -9,17 +9,17 @@ selected_button = None
 def select_button(btn):
     global selected_button
 
-    # ▷ 같은 버튼 다시 누르면 → 비활성화
+    #같은 버튼 비활성화
     if selected_button == btn:
         btn.config(bg="#7f8282", relief="flat")
         selected_button = None
         return
 
-    # ▷ 다른 버튼 눌렀을 때 → 이전 버튼 비활성화
+    #다른 버튼 눌렀을 때 이전 버튼 비활성화
     if selected_button and selected_button != btn:
         selected_button.config(bg="#7f8282", relief="flat")
 
-    # ▷ 현재 버튼 활성화
+    #현재 버튼 활성화
     btn.config(relief="sunken", bg="#8ed1dc")
     selected_button = btn
 
