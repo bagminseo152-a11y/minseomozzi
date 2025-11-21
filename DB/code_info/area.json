@@ -1,0 +1,189 @@
+{
+    "1": {
+        "Kor": "서울",
+        "Eng": "Seoul",
+        "Jpn": "ソウル特別市",
+        "Chs": "首尔特別市",
+        "Cht": "首爾特別市",
+        "Fre": "Séoul",
+        "Ger": "Seoul",
+        "Spn": "Seúl",
+        "Rus": "Сеул"
+    },
+    "2": {
+        "Kor": "인천",
+        "Eng": "Incheon",
+        "Jpn": "仁川広域市",
+        "Chs": "仁川广域市",
+        "Cht": "仁川廣域市",
+        "Fre": "Incheon",
+        "Ger": "Incheon",
+        "Spn": "Incheon",
+        "Rus": "Инчхон"
+    },
+    "3": {
+        "Kor": "대전",
+        "Eng": "Daejeon",
+        "Jpn": "大田広域市",
+        "Chs": "大田广域市",
+        "Cht": "大田廣域市",
+        "Fre": "Daejeon",
+        "Ger": "Daejeon",
+        "Spn": "Daejeon",
+        "Rus": "Тэчжон"
+    },
+    "4": {
+        "Kor": "대구",
+        "Eng": "Daegu",
+        "Jpn": "大邱広域市",
+        "Chs": "大邱广域市",
+        "Cht": "大邱廣域市",
+        "Fre": "Daegu",
+        "Ger": "Daegu",
+        "Spn": "Daegu",
+        "Rus": "Тэгу"
+    },
+    "5": {
+        "Kor": "광주",
+        "Eng": "Gwangju",
+        "Jpn": "光州広域市",
+        "Chs": "光州广域市",
+        "Cht": "光州廣域市",
+        "Fre": "Gwangju",
+        "Ger": "Gwangju",
+        "Spn": "Gwangju",
+        "Rus": "Кванчжу"
+    },
+    "6": {
+        "Kor": "부산",
+        "Eng": "Busan",
+        "Jpn": "釜山広域市",
+        "Chs": "釜山广域市",
+        "Cht": "釜山廣域市",
+        "Fre": "Busan",
+        "Ger": "Busan",
+        "Spn": "Busan",
+        "Rus": "Пусан"
+    },
+    "7": {
+        "Kor": "울산",
+        "Eng": "Ulsan",
+        "Jpn": "蔚山広域市",
+        "Chs": "蔚山广域市",
+        "Cht": "蔚山廣域市",
+        "Fre": "Ulsan",
+        "Ger": "Ulsan",
+        "Spn": "Ulsan",
+        "Rus": "Ульсан"
+    },
+    "8": {
+        "Kor": "세종특별자치시",
+        "Eng": "Sejong",
+        "Jpn": "世宗特別自治市",
+        "Chs": "世宗市",
+        "Cht": "世宗市",
+        "Fre": "Sejong",
+        "Ger": "Sejong",
+        "Spn": "Sejong ",
+        "Rus": "Сэчжон "
+    },
+    "31": {
+        "Kor": "경기도",
+        "Eng": "Gyeonggi-do",
+        "Jpn": "京畿道",
+        "Chs": "京畿道",
+        "Cht": "京畿道",
+        "Fre": "Gyeonggi-do",
+        "Ger": "Gyeonggi-do",
+        "Spn": "Gyeonggi-do",
+        "Rus": "Кёнги-до"
+    },
+    "32": {
+        "Kor": "강원특별자치도",
+        "Eng": "Gangwon-do",
+        "Jpn": "江原道",
+        "Chs": "江原道",
+        "Cht": "江原道",
+        "Fre": "Gangwon-do",
+        "Ger": "Gangwon-do",
+        "Spn": "Gangwon-do",
+        "Rus": "Канвон-до"
+    },
+    "33": {
+        "Kor": "충청북도",
+        "Eng": "Chungcheongbuk-do",
+        "Jpn": "忠清北道",
+        "Chs": "忠清北道",
+        "Cht": "忠淸北道",
+        "Fre": "Chungcheongbuk-do",
+        "Ger": "Chungcheongbuk-do",
+        "Spn": "Chungcheongbuk-do",
+        "Rus": "Чхунчхон-пукто"
+    },
+    "34": {
+        "Kor": "충청남도",
+        "Eng": "Chungcheongnam-do",
+        "Jpn": "忠清南道",
+        "Chs": "忠清南道",
+        "Cht": "忠清南道",
+        "Fre": "Chungcheongnam-do",
+        "Ger": "Chungcheongnam-do",
+        "Spn": "Chungcheongnam-do",
+        "Rus": "Чхунчхон-намдо"
+    },
+    "35": {
+        "Kor": "경상북도",
+        "Eng": "Gyeongsangbuk-do",
+        "Jpn": "慶尚北道",
+        "Chs": "庆尚北道",
+        "Cht": "慶尙北道",
+        "Fre": "Gyeongsangbuk-do",
+        "Ger": "Gyeongsangbuk-do",
+        "Spn": "Gyeongsangbuk-do",
+        "Rus": "Кёнсан-пукто"
+    },
+    "36": {
+        "Kor": "경상남도",
+        "Eng": "Gyeongsangnam-do",
+        "Jpn": "慶尚南道",
+        "Chs": "庆尚南道",
+        "Cht": "慶尙南道",
+        "Fre": "Gyeongsangnam-do",
+        "Ger": "Gyeongsangnam-do",
+        "Spn": "Gyeongsangnam-do",
+        "Rus": "Кёнсан-намдо"
+    },
+    "37": {
+        "Kor": "전북특별자치도",
+        "Eng": "Jeonbuk-do",
+        "Jpn": "チョンブク特別自治道",
+        "Chs": "全北特別自治道",
+        "Cht": "全北特别自治道",
+        "Fre": "Région Jeonbuk",
+        "Ger": "Jeonbuk-do",
+        "Spn": "Jeonbuk-do",
+        "Rus": "особая автономная провинция Чонбук"
+    },
+    "38": {
+        "Kor": "전라남도",
+        "Eng": "Jeollanam-do",
+        "Jpn": "全羅南道",
+        "Chs": "全罗南道",
+        "Cht": "全羅南道",
+        "Fre": "Jeollanam-do",
+        "Ger": "Jeollanam-do",
+        "Spn": "Jeollanam-do",
+        "Rus": "Чолла-намдо"
+    },
+    "39": {
+        "Kor": "제주특별자치도",
+        "Eng": "Jeju-do",
+        "Jpn": "済州特別自治道",
+        "Chs": "济州道",
+        "Cht": "濟州道",
+        "Fre": "Jeju-do",
+        "Ger": "Jeju-do",
+        "Spn": "Jeju-do",
+        "Rus": "Чечжудо"
+    }
+}
