@@ -1,0 +1,83 @@
+{
+    "Kor": {
+        "lang_name": "한국어",
+        "select_area": "지역 선택",
+        "select_cat1": "대분류 선택",
+        "select_cat2": "중분류 선택",
+        "select_cat3": "소분류 선택",
+        "content_name": "관광지명",
+        "search_content": "검색"
+    },
+    "Eng": {
+        "lang_name": "English",
+        "select_area": "Select Region",
+        "select_cat1": "Select Category",
+        "select_cat2": "Select Subcategory (Level 2)",
+        "select_cat3": "Select Subcategory (Level 3)",
+        "content_name": "Place Name",
+        "search_content": "Search"
+    },
+    "Jpn": {
+        "lang_name": "日本語",
+        "select_area": "地域を選択",
+        "select_cat1": "大分類を選択",
+        "select_cat2": "中分類を選択",
+        "select_cat3": "小分類を選択",
+        "content_name": "観光地名",
+        "search_content": "検索"
+    },
+    "Chs": {
+        "lang_name": "中文(简体)",
+        "select_area": "选择地区",
+        "select_cat1": "选择大类",
+        "select_cat2": "选择中类",
+        "select_cat3": "选择小类",
+        "content_name": "景点名称",
+        "search_content": "搜索"
+    },
+    "Cht": {
+        "lang_name": "中文(繁體)",
+        "select_area": "選擇地區",
+        "select_cat1": "選擇大類",
+        "select_cat2": "選擇中類",
+        "select_cat3": "選擇小類",
+        "content_name": "景點名稱",
+        "search_content": "搜尋"
+    },
+    "Fre": {
+        "lang_name": "Français",
+        "select_area": "Sélectionner la Région",
+        "select_cat1": "Sélectionner la Catégorie",
+        "select_cat2": "Sélectionner la Catégorie (Niveau 2)",
+        "select_cat3": "Sélectionner la Catégorie (Niveau 3)",
+        "content_name": "Nom du Lieu",
+        "search_content": "Rechercher"
+    },
+    "Ger": {
+        "lang_name": "Deutsche",
+        "select_area": "Region auswählen",
+        "select_cat1": "Hauptkategorie wählen",
+        "select_cat2": "Unterkategorie wählen (Ebene 2)",
+        "select_cat3": "Unterkategorie wählen (Ebene 3)",
+        "content_name": "Name der Sehenswürdigkeit",
+        "search_content": "Suchen"
+    },
+    "Rus": {
+        "lang_name": "Русский",
+        "select_area": "Выбрать регион",
+        "select_cat1": "Выбрать основную категорию",
+        "select_cat2": "Выбрать подкатегорию (Ур. 2)",
+        "select_cat3": "Выбрать подкатегорию (Ур. 3)",
+        "content_name": "Название места",
+        "search_content": "Поиск"
+    },
+    "Spn": {
+        "lang_name": "Español",
+        "select_area": "Seleccionar Región",
+        "select_cat1": "Seleccionar Categoría (Nivel 1)",
+        "select_cat2": "Seleccionar Subcategoría (Nivel 2)",
+        "select_cat3": "Seleccionar Subcategoría (Nivel 3)",
+        "content_name": "Nombre del Lugar",
+        "search_content": "Buscar"
+    }
+}
