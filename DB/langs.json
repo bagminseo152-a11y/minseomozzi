@@ -6,7 +6,8 @@
         "select_cat2": "중분류 선택",
         "select_cat3": "소분류 선택",
         "content_name": "관광지명",
-        "search_content": "검색"
+        "search_content": "검색",
+        "address": "주소"
     },
     "Eng": {
         "lang_name": "English",
@@ -15,7 +16,8 @@
         "select_cat2": "Select Subcategory (Level 2)",
         "select_cat3": "Select Subcategory (Level 3)",
         "content_name": "Place Name",
-        "search_content": "Search"
+        "search_content": "Search",
+        "address": "address"
     },
     "Jpn": {
         "lang_name": "日本語",
@@ -24,7 +26,8 @@
         "select_cat2": "中分類を選択",
         "select_cat3": "小分類を選択",
         "content_name": "観光地名",
-        "search_content": "検索"
+        "search_content": "検索",
+        "address": "住所"
     },
     "Chs": {
         "lang_name": "中文(简体)",
@@ -33,7 +36,8 @@
         "select_cat2": "选择中类",
         "select_cat3": "选择小类",
         "content_name": "景点名称",
-        "search_content": "搜索"
+        "search_content": "搜索",
+        "address": "地址"
     },
     "Cht": {
         "lang_name": "中文(繁體)",
@@ -42,7 +46,8 @@
         "select_cat2": "選擇中類",
         "select_cat3": "選擇小類",
         "content_name": "景點名稱",
-        "search_content": "搜尋"
+        "search_content": "搜尋",
+        "address": "地址"
     },
     "Fre": {
         "lang_name": "Français",
@@ -51,7 +56,8 @@
         "select_cat2": "Sélectionner la Catégorie (Niveau 2)",
         "select_cat3": "Sélectionner la Catégorie (Niveau 3)",
         "content_name": "Nom du Lieu",
-        "search_content": "Rechercher"
+        "search_content": "Rechercher",
+        "address": "adresse"
     },
     "Ger": {
         "lang_name": "Deutsche",
@@ -60,7 +66,8 @@
         "select_cat2": "Unterkategorie wählen (Ebene 2)",
         "select_cat3": "Unterkategorie wählen (Ebene 3)",
         "content_name": "Name der Sehenswürdigkeit",
-        "search_content": "Suchen"
+        "search_content": "Suchen",
+        "address": "die Adresse"
     },
     "Rus": {
         "lang_name": "Русский",
@@ -69,7 +76,8 @@
         "select_cat2": "Выбрать подкатегорию (Ур. 2)",
         "select_cat3": "Выбрать подкатегорию (Ур. 3)",
         "content_name": "Название места",
-        "search_content": "Поиск"
+        "search_content": "Поиск",
+        "address": "Адрес"
     },
     "Spn": {
         "lang_name": "Español",
@@ -78,6 +86,7 @@
         "select_cat2": "Seleccionar Subcategoría (Nivel 2)",
         "select_cat3": "Seleccionar Subcategoría (Nivel 3)",
         "content_name": "Nombre del Lugar",
-        "search_content": "Buscar"
+        "search_content": "Buscar",
+        "address": "dirección"
     }
 }

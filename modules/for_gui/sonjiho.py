@@ -1,121 +1,75 @@
 import tkinter as tk
 import tkinter.font as tkfont
-from tkinter import ttk
-import json
+from modules.for_gui.choijiwon import *
+from modules.for_data.choijiwon import *
 
-def get_json_from_file(dir):
-    with open(f"./DB/{dir}", 'r', encoding='utf-8') as f:
-        return json.load(f)
 
-def get_program_title_label(master):
-    lb = tk.Label(
-        master,
-        height=1
-    )
+# 관광지 상세정보 창
+class ContentDetail(tk.Toplevel):
+    def __init__(self, root, lang, cid):
+        w, h = 1200, 300
+        l = round((root.winfo_screenwidth()-w)/2) - 10
+        t = round((root.winfo_screenheight()-h)/2) - 50
 
-    return lb
+        self.lang = lang
+        self.cid = cid
+        self.data = get_json_from_file(f"spots/spots_{lang}.json")[cid]
 
-def get_language_selection(master, bt_command):
-    frame = tk.Frame(
-        master,
-        bg='white',
-        width = 860,
-        height=55,
-        relief='solid',
-        borderwidth=2
-    )
+        super().__init__(root)
+        self.geometry(f"{w}x{h}+{l}+{t}")
+        self.title(self.data["title"])
 
-    langs = list(get_json_from_file("langs.json").items())
-    
-    for i, lang in enumerate(langs):
-        tk.Button(
-            frame,
-            name=lang[0].lower(),
-            bg="#989898",
-            width=10,
-            height=2,
+        self.__create_img_part()
+        self.__create_info_part()
+
+        self.grab_set() 
+        self.transient(root)
+
+    def __create_img_part(self):
+        self.img_frame = tk.Frame(self, width=500, height=300)
+        self.img_frame.place(x=0, y=0)
+
+        self.img_label = tk.Label(self.img_frame)
+        self.img_label.place(relx=0.5, rely=0.5, anchor='center')
+
+        img = get_image_from_url(self.data["img_url"], (480, 280))
+        if img:
+            self.img_label.config(image=img)
+            self.img_label.image = img
+        else:
+            self.img_label.config(text="No Image")
+
+    def __create_info_part(self):
+        self.info_frame = tk.Frame(self, width=700, height=300)
+        self.info_frame.place(x=500, y=0)
+
+        self.title_label = tk.Label(
+            self.info_frame,
+            font=tkfont.Font(size=15, weight='bold'),
+            text=self.data["title"]
+        )
+        self.title_label.place(relx=0.5, y=20, anchor='n')
+        
+        self.addr_label = tk.Label(
+            self.info_frame,
+            font=tkfont.Font(size=11),
+            text=f"{get_json_from_file("langs.json")[self.lang]["address"]}: {self.data["addr"]}"
+        )
+        self.addr_label.place(relx=0.5, y=60, anchor='n')
+
+        self.detail_label = tk.Label(
+            self.info_frame,
+            width=95,
+            height=11,
+            font=tkfont.Font(size=10, family="맑은 고딕"),
+            text=get_spot_detail(self.lang, self.cid),
+            wraplength=660,
             relief='solid',
-            borderwidth=2,
-            text=lang[1]["lang_name"],
-            command=lambda lang=lang[0]: bt_command(lang)
-        ).place(relx=(0.005 + i/9.05), rely=0.5, anchor='w')
+            borderwidth=1
+        )
+        self.detail_label.place(relx=0.5, rely=0.62, anchor='center')
 
-    return frame
 
-def get_filtering_container(master, combo_command):
-    frame = tk.Frame(
-        master,
-        bg='white',
-        width = 1220,
-        height=70,
-        relief='solid',
-        borderwidth=2
-    )
+def display_content_detail(e, root, lang, content_id):
+    ContentDetail(root, lang, content_id)
 
-    style = ttk.Style()
-    style.configure('TCombobox', padding=(1, 8, 1, 8))
-
-    area_combo = ttk.Combobox(
-        frame,
-        width=22,
-        height=17,
-        font=tkfont.Font(size=14),
-        justify='center',
-    )
-    category_combos = [
-        ttk.Combobox(
-            frame,
-            width=33,
-            height=17,
-            font=tkfont.Font(size=13),
-            justify='center'
-        ) for _ in range(3)
-    ]
-
-    area_combo.bind("<<ComboboxSelected>>", lambda e, changed='area': combo_command(e, changed))
-    area_combo.place(relx=0.12, rely=0.5, anchor='center')
-
-    for i in range(3):
-        category_combos[i].bind("<<ComboboxSelected>>", lambda e, changed=f'cat{i+1}': combo_command(e, changed))
-        category_combos[i].place(relx=0.38 + 0.24*i, rely=0.5, anchor='center')
-
-    return frame
-
-def get_contents_container(master):
-    frame = tk.Frame(
-        master,
-        bg='white',
-        width = 1220,
-        height=600,
-        relief='solid',
-        borderwidth=2
-    )
-
-    search_frame = tk.Frame(
-        frame, 
-        width=1180, 
-        height=50,
-        relief='solid',
-        borderwidth=2
-    )
-    search_frame.place(relx=0.5, y=20, anchor='n') 
-
-    tk.Label(
-        search_frame,
-        height=1
-    ).place(x=0, rely=0.5, anchor='w')
-    tk.Entry(
-        search_frame,
-        width=59,
-        font=tkfont.Font(size=20, family="맑은 고딕"),
-        relief='groove'
-    ).place(x=167, rely=0.5, anchor='w')
-    tk.Button(
-        search_frame,
-        width=10,
-        height=1,
-        font=tkfont.Font(size=13, family="맑은 고딕"),
-        relief='groove'
-    ).place(x=1063, rely=0.5, anchor='w')
-
-    return frame

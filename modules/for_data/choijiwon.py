@@ -1,5 +1,5 @@
 import requests
-from leegunwoo import *
+from modules.for_data.leegunwoo import *
 
 
 def get_spot_detail(lang, contentId):
@@ -23,4 +23,4 @@ def get_spot_detail(lang, contentId):
 
 
 # 테스트
-print(get_spot_detail("Jpn", "3085375"))
+# print(get_spot_detail("Jpn", "3085375"))

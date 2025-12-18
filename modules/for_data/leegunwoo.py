@@ -1,4 +1,4 @@
-from sonjiho import *
+from modules.for_data.sonjiho import *
 import json
 
 def get_json_from_file(dir):
