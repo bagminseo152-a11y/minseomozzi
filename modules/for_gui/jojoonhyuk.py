@@ -16,9 +16,9 @@ class LanguageSelection(tk.Frame):
         )
         self.buttons = {}
         self.command = command
-        self._create_buttons()
+        self.__create_buttons()
 
-    def _create_buttons(self):
+    def __create_buttons(self):
         langs = get_json_from_file("langs.json")
         for i, (code, data) in enumerate(langs.items()):
             bt = tk.Button(

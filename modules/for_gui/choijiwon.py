@@ -6,6 +6,8 @@ import os
 import sys
 import json 
 
+
+# 파일 시스템 경로 가져오기 (exe 빌드용)
 def resource_path(relative_path):
     try:
         base_path = sys._MEIPASS
@@ -15,6 +17,7 @@ def resource_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 
+# db 파일 데이터를 가져옴
 def get_json_from_file(dir):
     sys_dir = resource_path(f"DB/{dir}")
 
@@ -22,6 +25,7 @@ def get_json_from_file(dir):
         return json.load(f)
 
 
+# url에 해당하는 이미지를 tkiner에서 사용할 수 있는 이미지 객체로 변환하여 반환해줌
 def get_image_from_url(url, size):
     if url == "":
         return None
@@ -42,5 +46,3 @@ def get_image_from_url(url, size):
     except Exception as e:
         print(f"오류 발생: {e}")
         return None
-
-

@@ -15,13 +15,13 @@ class FilteringContainer(tk.Frame):
             borderwidth=2
         )
         self.command = command
-        self._setup_style()
-        self._create_widgets()
+        self.__setup_style()
+        self.__create_widgets()
 
-    def _setup_style(self):
+    def __setup_style(self):
         ttk.Style().configure('TCombobox', padding=(1, 8, 1, 8))
 
-    def _create_widgets(self):
+    def __create_widgets(self):
         self.area_combo = ttk.Combobox(self, width=22, font=tkfont.Font(size=14), justify='center')
         self.area_combo.place(relx=0.12, rely=0.5, anchor='center')
         self.area_combo.bind("<<ComboboxSelected>>",

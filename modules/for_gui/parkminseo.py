@@ -13,10 +13,10 @@ class ContentsContainer(tk.Frame):
             relief='solid',
             borderwidth=2
         )
-        self._create_search(search_command)
-        self._create_contents()
+        self.__create_search(search_command)
+        self.__create_contents()
 
-    def _create_search(self, command):
+    def __create_search(self, command):
         self.search_frame = tk.Frame(self, width=1180, height=50, relief='solid', borderwidth=2)
         self.search_frame.place(relx=0.5, y=20, anchor='n')
 
@@ -38,6 +38,6 @@ class ContentsContainer(tk.Frame):
         )
         self.search_button.place(x=1063, rely=0.5, anchor='w')
 
-    def _create_contents(self):
+    def __create_contents(self):
         self.contents_frame = tk.Frame(self, width=1180, height=490, bg='white')
         self.contents_frame.place(relx=0.5, y=90, anchor='n')
